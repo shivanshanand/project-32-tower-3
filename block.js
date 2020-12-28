@@ -17,8 +17,9 @@
     }
 
     display(){
-      console.log(this.body.speed)
+     // console.log(this.body.speed)
 
+      stroke("black")
       push();
       if(this.body.speed<3){
         var angle = this.body.angle;
