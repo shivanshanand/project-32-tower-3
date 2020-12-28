@@ -6,8 +6,6 @@ const Constraint = Matter.Constraint;
 var engine, world;
 
 var backgroundImg, bg;
-
-var gameState="start";
 var score=0;
 
 function preload(){
@@ -221,14 +219,11 @@ function draw(){
 }
 
 function mouseDragged(){
-    if(gameState!=="launched"){
     Matter.Body.setPosition(polygon.body,{x:mouseX,y:mouseY});
-  }
 }
 
 function mouseReleased(){
     rope1.fly();
-    gameState = "launched";
 }
 
 function keyPressed(){
