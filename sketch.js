@@ -6,6 +6,7 @@ const Constraint = Matter.Constraint;
 var engine, world;
 
 var backgroundImg, bg;
+
 var score=0;
 
 function preload(){
@@ -220,6 +221,7 @@ function draw(){
 
 function mouseDragged(){
     Matter.Body.setPosition(polygon.body,{x:mouseX,y:mouseY});
+  
 }
 
 function mouseReleased(){
@@ -228,7 +230,7 @@ function mouseReleased(){
 
 function keyPressed(){
     if(keyCode===32){
-        rope1.attach(polygon.body);
+     rope1.attach(polygon.body);
     }
 }
 
