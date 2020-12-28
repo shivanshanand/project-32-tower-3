@@ -233,7 +233,7 @@ function mouseReleased(){
 
 function keyPressed(){
     if(keyCode===32){
-       // rope1.attach(polygon.body);
+        rope1.attach(polygon.body);
     }
 }
 
